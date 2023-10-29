@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Joey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1s;">
+        <table>
+            <tr>
+                <td id="logo">Joseph Lefco</td>
+                <td id="navigation">
+                    <a href="#work">Achievements</a>
+                    <a href="#bio">About</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Information Technology / Software Development</h1>
+                <button class="btn_one"><a style="text-decoration:none" color: #fb3f00; href="mailto:$josephlefco@gmail.com?subject=Job Opportunity from a Great Company&body=I would like to discuss a potential job opportunity with you.">Hire Me</a></button><br>
+                <table>
+                    <tr>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>Achievements</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="https://i.imgur.com/BU39k03.jpg">
+<P>My automotive career begun in 10th Grade. I went in knowing 
+        nothing, but with time, I worked my way up. I am now in the Senior <br>
+    Level Automotive Program at Grafton High School, working on <br> customer cars, and proud to have the best instructor in the state: Nicholas Fullington. Mr. Fullington has been present, helping with lab, tests and homework since day one. He's always been to the rescue when we messed with shop cars, and despite being so out of place in the Automotive program, I cannot recall once feeling that way. His unique and attentive teaching style is ultimately building, fixing, and maintaining our cars which we depend on every day</P>
+  
+    </div>
+        <div id="photos">
+    <img onclick="magnify($(this).attr('src'))" src="https://i.imgur.com/FTo0vQk.jpg">
+
+    <p>I owe everything I know in the technology field to Mrs. Sumner. She is one of my favorite teachers, and is one of the sole reasons I'm so interested in not only computers and computer science, but also my interest in Software Development. She is one of the few people who have had faith in me and saw my potention throughout all of highschool, and I appreciate everything she does for not only me, but also everyone else who is interested in the field. I've seen the students she's produced, and I can say with utmost certainty that she isn't teaching for money, she is teaching to build the future, one child at a time.</p>
+        </div>
+
+    </div>
+    <div id="bio">
+        <h1>About Me</h1>
+        <p>
+            <big><big>Computer Science</big></big>
+            <br>
+            I'm in the Advanced Placement program for computer science, and intend to be finished with the entire program by the end of the school year and begin collge, where I'll be studying Software Development. This has been a big dream of mine since I started high school and started to figure out what I wanted to do with myself, and I couldn't be more excited.
+        </p>
+        <p>
+            <big><big>Automotive</big></big>
+            <br>
+            I started my automotive journey in grade 10, and while everybody already knew so much, I was always behind. I had to Pull myself up by my bootstraps, so I put my head down and got to work. Now I'm in the senior level program, and I intend to finish it all the way through, ending the school year with more knowledge in the Automotive world than many, and an ASE Certification. Grafton's Automotive program has by far been the highlight of my academic career, and I wanted nothing more than to get my own uniform and hat, and I'm so proud to be a GHS Auto Hawk.
+                        
+            </p>
+        <big><big>Work Life</big></big>
+        <p>    
+            <big>McDonald's (2020-2023) </big>
+            <br>
+            I got my work certificate and started working the minute I could. I remember Summer of 2020, I just got my work certificate and got a job at McDonald's, making $7.25 an hour, minimum wage. While $7.25 isn't much, especially today, it felt like all of the money in the world to 14 year old me. I was in disbelief that I finally had my own money to spend, and I didn't have to spend my parents' money. The day I got my first check: $403.52, I knew I was going to do whatever it took to make it and fight for my independence. When I finished working at McDonald's I was making $13.00 an hour, and I was proficient in every scene: Cooking, Drive Thru, Janitorial- I could practically run the store on my own. 
+        </p>
+    <big>Walmart (2023-Present) </big>
+            <br>
+        I started working at Walmart in Summer of 2023, and having a job outside of fast food was life changing. I finally felt like I had time to myself and I didn't have to always be ready to come in to work when they needed me. Walmart has helped me throughout my mental health journey- providing time off, therapy, and on top of that, they're giving me $15 an hour, which is the most I've made through and through. No matter what happens, I am eternally greatful for the people who work with me, since some days they're the only people who check in with me and ask me how I'm doing. 
+    </div>
+    <div id="contact">
+        <h1>Contact Me</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 (602) 524-6199</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; josephlefco@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Please contact for address
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+    <br> <a href="https://imfunniee.github.io">Credit: imfunniee (Github Redirect)</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
