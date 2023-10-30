@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Protection</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: black !important; /* Change the background color to black */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white; /* Change text color to white */
+}
+        
+        #password-form {
+            margin: 100px auto;
+            max-width: 350px;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #error-message {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="password-form">
+        <label for="password">Enter the password:</label>
+        <input type="password" id="password" name="password">
+        <button type="button" onclick="checkPassword()">Submit</button>
+    </form>
+
+    <div id="error-message" style="color: red;"></div>
+
+    <script>
+        function checkPassword() {
+            var enteredPassword = document.getElementById("password").value;
+            var correctPassword = "your_password_here"; // Replace with your actual password
+
+            if (enteredPassword === correctPassword) {
+                // Password is correct; redirect to the protected page
+                window.location.href = "protected_page.html";
+            } else {
+                // Password is incorrect; display an error message
+                document.getElementById("error-message").innerText = "Incorrect password. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>
